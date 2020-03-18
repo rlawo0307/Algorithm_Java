@@ -1,6 +1,6 @@
 import java.util.Arrays;
 
-class k¹øÂ°¼ıÀÚ {
+class kÂ¹Ã¸Ã‚Â°Â¼Ã½Ã€Ãš {
     public static int[] solution(int[] array, int[][] commands) {
     	int[] res = new int[commands.length];
     	
@@ -16,6 +16,10 @@ class k¹øÂ°¼ıÀÚ {
     public static void main(String[] args) {
     	int[] arr1 = {1,5,2,6,3,7,4};
     	int[][] arr2 = {{2,5,3},{4,4,1},{1,7,3}};
-		System.out.println(k¹øÂ°¼ıÀÚ.solution(arr1, arr2));
+		System.out.println(kÂ¹Ã¸Ã‚Â°Â¼Ã½Ã€Ãš.solution(arr1, arr2));
 	}
 }
+
+/*
+Arrays.copyOfRange()	: ë²”ìœ„ë¥¼ ì§€ì •í•˜ì—¬ ë°°ì—´ ë³µì‚¬
+*/
