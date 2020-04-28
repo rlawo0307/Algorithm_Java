@@ -32,7 +32,7 @@ public class _11650 {
 class _11650_Xy implements Comparable<_11650_Xy>
 {
 	int x, y;
-	public Xy(int x, int y)
+	public _11650_Xy(int x, int y)
 	{
 		this.x = x;
 		this.y = y;
