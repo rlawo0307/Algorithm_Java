@@ -9,7 +9,7 @@ public class _11650 {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
 		StringTokenizer st;
-		LinkedList<Xy> list = new LinkedList<Xy>();
+		LinkedList<_11650_Xy> list = new LinkedList<_11650_Xy>();
 		
 		int n = Integer.parseInt(br.readLine());
 		for(int i=0; i<n; i++)
@@ -17,11 +17,11 @@ public class _11650 {
 			st = new StringTokenizer(br.readLine(), " ");
 			int x = Integer.parseInt(st.nextToken());
 			int y = Integer.parseInt(st.nextToken());
-			list.add(new Xy(x, y));
+			list.add(new _11650_Xy(x, y));
 		}
 		Collections.sort(list);
 		
-		for(Xy tmp : list)
+		for(_11650_Xy tmp : list)
 			bw.write(tmp.x + " " + tmp.y + "\n");
 		
 		bw.flush();
@@ -29,7 +29,7 @@ public class _11650 {
 		bw.close();	
 	}
 }
-class Xy implements Comparable<Xy>
+class _11650_Xy implements Comparable<_11650_Xy>
 {
 	int x, y;
 	public Xy(int x, int y)
@@ -39,7 +39,7 @@ class Xy implements Comparable<Xy>
 	}
 	
 	@Override
-	public int compareTo(Xy p)
+	public int compareTo(_11650_Xy p)
 	{
 		if(this.x > p.x)
 			return 1;
